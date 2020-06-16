@@ -4,7 +4,12 @@
   padding: 20px 100px;
   position: absolute;
   width: 100%;
+  z-index: 1;
   .header-logo {
-    &__img {}
+    &__img {
+      img {
+        width: 140px;
+      }
+    }
   }
 }

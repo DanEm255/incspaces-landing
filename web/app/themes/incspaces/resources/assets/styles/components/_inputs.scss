@@ -1,1 +1,31 @@
 /* stylelint-disable */
+
+.input1A {
+  font-size: em(24);
+  padding: 7px 10px;
+  background-color: transparent;
+  border: 0;
+  color: $light;
+  border-bottom: 1px solid grey;
+  margin-bottom: 30px;
+  @include placeholder-color($light);
+}
+
+select.input1A option {
+  color: $dark;
+}
+
+.check1A {
+  input {
+    width: 20px!important;
+    height: 20px;
+    background-color: transparent;
+  }
+}
+
+.btn1A {
+  font-size: em(24);
+  padding: 10px 40px;
+  width: auto!important;
+  border: 0;
+}

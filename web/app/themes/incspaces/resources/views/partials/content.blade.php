@@ -1,6 +1,6 @@
 <section class="hero">
   <div class="hero-background">
-    <div class="hero-background__canvas"></div>
+    <div class="hero-background__img" style="background-image:url('{{ get_template_directory_uri() }}/assets/images/featured.jpg');"></div>
   </div>
   <div class="container">
     <div class="row">
@@ -22,7 +22,9 @@
           <div class="row r">
             <div class="col-xs-10">
               <h2 class="form-block__hdr">Enquire today</h2>
-              <div class="form-block-fieldset"></div>
+              <div class="form-block-fieldset">
+                @php echo do_shortcode( '[contact-form-7 id="9" title="Enquiry Form"]' ) @endphp
+              </div>
             </div>
           </div>
         </section>

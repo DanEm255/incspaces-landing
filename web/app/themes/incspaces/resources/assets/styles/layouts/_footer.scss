@@ -17,7 +17,11 @@
     .footer-base-leftside {
       display: flex;
       flex: 1;
-      &__img {}
+      align-items: center;
+      &__img {
+        width: 90px;
+        height: auto;
+      }
       .inner-social {
         padding-left: 80px;
         &__img {

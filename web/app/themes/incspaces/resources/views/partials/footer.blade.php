@@ -7,10 +7,10 @@
         </div>
         <div class="footer-base">
           <div class="footer-base-leftside">
-            <img class="footer-base-leftside__img" src="https://placehold.it/90x25" alt="">
+            <img class="footer-base-leftside__img" src="{{ get_template_directory_uri() }}/assets/images/inspaces-logo.png" alt="">
             <div class="inner-social">
               <a class="inner-social__img" href="#">
-                <img src="{{ get_template_directory_uri() }}/assets/images/facebook.svg" alt="" />
+                <img src="{{ get_template_directory_uri() }}/assets/images/twitter.svg" alt="" />
               </a>
               <a class="inner-social__img" href="#">
                 <img src="{{ get_template_directory_uri() }}/assets/images/linkedin.svg" alt="" />

@@ -8,9 +8,59 @@
     padding-bottom: 60px;
   }
   .form-block-fieldset {
-    height: 650px;
-    background-color: lighten($color1, 5%);
     max-width: 80%;
+    .wpcf7-form-control-wrap {
+      overflow: hidden;
+    }
+    .wpcf7-form {
+      input,
+      select,
+      textarea {
+        width: 100%;
+      }
+      .wpcf7-form-control-wrap {
+        display: block;
+        position: relative;
+        select {
+          width: 105%;
+        }
+        &.desks,
+        &.people,
+        &.location {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 15px;
+            right: 10px;
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 12px solid $light;
+          }
+        }
+        &.consent {
+          .wpcf7-form-control {
+            .wpcf7-list-item {
+              margin: 0;
+              label {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                padding-bottom: 55px;
+                .wpcf7-list-item-label {
+                  font-size: em(20);
+                  padding-left: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .wpcf7-list-item {
+        margin: 0;
+      }
+    }
   }
   .r {
     justify-content: center;
