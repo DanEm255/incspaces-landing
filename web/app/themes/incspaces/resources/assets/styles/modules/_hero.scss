@@ -12,9 +12,9 @@
     bottom: 0;
     left: 0;
     &__img {
-      @include background-cover();
       width: 100%;
       height: 100%;
+      @include background-cover();
     }
   }
   .hero-textarea {
@@ -24,7 +24,9 @@
       font-size: em(130);
     }
     &__para {
-      font-size: em(34);
+      p {
+        font-size: em(34);
+      }
     }
   }
   @include bootstrap-full-height(vertical);

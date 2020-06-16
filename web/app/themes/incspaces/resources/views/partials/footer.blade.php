@@ -8,23 +8,19 @@
         <div class="footer-base">
           <div class="footer-base-leftside">
             <img class="footer-base-leftside__img" src="{{ get_template_directory_uri() }}/assets/images/inspaces-logo.png" alt="">
-            <div class="inner-social">
-              <a class="inner-social__img" href="#">
-                <img src="{{ get_template_directory_uri() }}/assets/images/twitter.svg" alt="" />
-              </a>
-              <a class="inner-social__img" href="#">
-                <img src="{{ get_template_directory_uri() }}/assets/images/linkedin.svg" alt="" />
-              </a>
-              <a class="inner-social__img" href="#">
-                <img src="{{ get_template_directory_uri() }}/assets/images/instagram.svg" alt="" />
-              </a>
-              <a class="inner-social__img" href="#">
-                <img src="{{ get_template_directory_uri() }}/assets/images/facebook.svg" alt="" />
-              </a>
-            </div>
+              @if (get_field('platforms', 'options'))
+                <div class="inner-social">
+                  @php $social = get_field('platforms', 'options') @endphp
+                  @foreach($social as $single_social)
+                    <a class="inner-social__img" target="_blank" href="{{ $single_social['media_url'] }}">
+                      <img src="{{ get_template_directory_uri() }}/assets/images/{{ $single_social['select_media_platform'] }}.svg" alt="{{ $single_social['select_media_platform'] }}" />
+                    </a>
+                  @endforeach
+                </div>
+              @endif
           </div>
           <div class="footer-base-rightside">
-            <p class="footer-base-rightside__para">&copy; 2020 incspaces. All Rights Reserved.</p>
+            <p class="footer-base-rightside__para">&copy; {{ date('Y') }} incspaces. All Rights Reserved.</p>
           </div>
         </div>
       </div>

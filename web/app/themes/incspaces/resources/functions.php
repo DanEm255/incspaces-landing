@@ -90,3 +90,5 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+acf_add_options_page();
