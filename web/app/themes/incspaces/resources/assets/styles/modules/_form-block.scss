@@ -1,0 +1,27 @@
+/* stylelint-disable */
+
+.form-block {
+  padding-top: 155px;
+  position: relative;
+  &__hdr {
+    font-size: em(65);
+    padding-bottom: 60px;
+  }
+  .form-block-fieldset {
+    height: 650px;
+    background-color: lighten($color1, 5%);
+    max-width: 80%;
+  }
+  .r {
+    justify-content: center;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    background-color: $light;
+    top: 120px;
+    left: 0;
+    bottom: 0;
+  }
+}

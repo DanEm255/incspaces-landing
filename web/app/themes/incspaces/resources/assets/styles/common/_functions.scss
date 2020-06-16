@@ -1,0 +1,11 @@
+/* stylelint-disable */
+
+@function em($target, $context: 16) {
+  @return ($target / $context) * 1em;
+}
+
+@function vw($size) {
+  $xxl: 1500;
+  $vw-context: $xxl * 0.01 * 1px;
+  @return $size / $vw-context * 1vw;
+}

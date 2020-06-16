@@ -1,0 +1,32 @@
+/* stylelint-disable */
+
+.image-tiles {
+  width: 110%;
+  position: relative;
+  z-index: 1;
+  padding-top: 150px;
+  padding-bottom: 110px;
+  .image-tiles-heading {
+    &__hdr {
+      font-size: em(65);
+      max-width: 230px;
+    }
+  }
+  .image-tiles-single {
+    height: 325px;
+    background-color: $dark;
+    padding: 50px 40px;
+    &__hdr {
+      font-size: em(28);
+      span {
+        display: block;
+      }
+    }
+  }
+  .inner-background {
+    &__img {}
+  }
+  .c {
+    padding: 25px;
+  }
+}

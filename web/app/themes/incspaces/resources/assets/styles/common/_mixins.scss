@@ -1,0 +1,82 @@
+/* stylelint-disable */
+
+@mixin webkit-line-clamp($clamp: 5) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $clamp;
+}
+
+@mixin background-cover($pos: center) {
+  background-size: cover;
+  background-position: $pos;
+  background-repeat: no-repeat;
+}
+
+@mixin background-contain() {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin background-size($size: 50%) {
+  background-size: $size;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@mixin gradient($from, $to) {
+  background: linear-gradient(to right, $from 0%, $to 100%);
+}
+
+@mixin gradient-triple($from, $middle, $to) {
+  background: linear-gradient(to right, $from 0%, $middle 50%, $to 100%);
+}
+
+@mixin placeholder-color-global($color) {
+  ::-webkit-input-placeholder {
+    color: $color;
+  }
+  ::-moz-placeholder {
+    color: $color;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin placeholder-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  &::-moz-placeholder {
+    color: $color;
+  }
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+}
+
+@mixin vertical-align() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin bootstrap-full-height($direction: false) {
+  .container,
+  .row,
+  div[class^="col-"] {
+    height: 100%;
+  }
+  div[class^="col-"] {
+    @if $direction==vertical {
+      display: flex;
+      align-items: center;
+    }
+    @if $direction==horizontal {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

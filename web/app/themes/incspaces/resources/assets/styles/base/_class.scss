@@ -1,0 +1,64 @@
+/* stylelint-disable */
+
+.col-5th,
+.col-sm-5th,
+.col-md-5th,
+.col-lg-5th {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+@include media-breakpoint-up(xs) {
+  .col-5th {
+    float: left;
+    width: 19%;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .col-sm-5th {
+    float: left;
+    width: 19.5%;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .col-md-5th {
+    float: left;
+    width: 20%;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .col-lg-5th {
+    float: left;
+    width: 20%;
+  }
+}
+
+.hover-fade {
+  opacity: 1;
+  transition: 0.5s;
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.main-content {
+  background-color: $color1;
+  color: $light;
+  > .container {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      width: 15px;
+      background-color: $light;
+      top: 0;
+      right: 0;
+      bottom: 270px;
+    }
+  }
+}

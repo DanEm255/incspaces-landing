@@ -1,0 +1,64 @@
+/* stylelint-disable */
+
+html,
+body,
+main {
+  font-family: $ff-primary;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $dark;
+  font-size: 14px;
+  @include media-breakpoint-up(xs) {
+    font-size: 16px;
+  }
+}
+
+body {
+  overflow: auto;
+  &.aos-animate {
+    overflow: auto;
+  }
+}
+
+address {
+  margin-bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 100;
+  margin: 0;
+}
+
+label {
+  font-weight: 100;
+}
+
+select,
+input,
+textarea {
+  outline: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}
