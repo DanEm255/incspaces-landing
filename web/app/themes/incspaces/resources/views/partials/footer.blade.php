@@ -10,16 +10,16 @@
             <img class="footer-base-leftside__img" src="https://placehold.it/90x25" alt="">
             <div class="inner-social">
               <a class="inner-social__img" href="#">
-                <img src="https://placehold.it/30x30" alt="" />
+                <img src="{{ get_template_directory_uri() }}/assets/images/facebook.svg" alt="" />
               </a>
               <a class="inner-social__img" href="#">
-                <img src="https://placehold.it/30x30" alt="" />
+                <img src="{{ get_template_directory_uri() }}/assets/images/linkedin.svg" alt="" />
               </a>
               <a class="inner-social__img" href="#">
-                <img src="https://placehold.it/30x30" alt="" />
+                <img src="{{ get_template_directory_uri() }}/assets/images/instagram.svg" alt="" />
               </a>
               <a class="inner-social__img" href="#">
-                <img src="https://placehold.it/30x30" alt="" />
+                <img src="{{ get_template_directory_uri() }}/assets/images/facebook.svg" alt="" />
               </a>
             </div>
           </div>

@@ -34,60 +34,60 @@
               </div>
             </div>
             <div class="col-xs-4 c">
-              <div class="image-tiles-single">
+              <a href="" class="image-tiles-single">
                 <div class="image-tiles-single__hdr"><span>Becket House</span> London</div>
                 <div class="inner-background">
-                  <div class="inner-background__img"></div>
+                  <div class="inner-background__img" style="background-image:url('{{ get_template_directory_uri()  }}/assets/images/becket-house.jpg')"></div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-xs-4 c">
-              <div class="image-tiles-single">
+              <a href="" class="image-tiles-single">
                 <div class="image-tiles-single__hdr"><span>Becket House</span> London</div>
                 <div class="inner-background">
-                  <div class="inner-background__img"></div>
+                  <div class="inner-background__img" style="background-image:url('{{ get_template_directory_uri()  }}/assets/images/furnival-street.jpg')"></div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-xs-4 c">
-              <div class="image-tiles-single">
+              <a href="" class="image-tiles-single">
                 <div class="image-tiles-single__hdr"><span>Becket House</span> London</div>
                 <div class="inner-background">
-                  <div class="inner-background__img"></div>
+                  <div class="inner-background__img" style="background-image:url('{{ get_template_directory_uri()  }}/assets/images/leadenhall.jpg')"></div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-xs-4 c">
-              <div class="image-tiles-single">
+              <a href="" class="image-tiles-single">
                 <div class="image-tiles-single__hdr"><span>Becket House</span> London</div>
                 <div class="inner-background">
-                  <div class="inner-background__img"></div>
+                  <div class="inner-background__img" style="background-image:url('{{ get_template_directory_uri()  }}/assets/images/mandeville-place.jpg')"></div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-xs-4 c">
-              <div class="image-tiles-single">
+              <a href="" class="image-tiles-single">
                 <div class="image-tiles-single__hdr"><span>Becket House</span> London</div>
                 <div class="inner-background">
-                  <div class="inner-background__img"></div>
+                  <div class="inner-background__img" style="background-image:url('{{ get_template_directory_uri()  }}/assets/images/monument.jpg')"></div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-xs-4 c">
-              <div class="image-tiles-single">
+              <a href="" class="image-tiles-single">
                 <div class="image-tiles-single__hdr"><span>Becket House</span> London</div>
                 <div class="inner-background">
-                  <div class="inner-background__img"></div>
+                  <div class="inner-background__img" style="background-image:url('{{ get_template_directory_uri()  }}/assets/images/midtown.jpg')"></div>
                 </div>
-              </div>
+              </a>
             </div>
             <div class="col-xs-4 c">
-              <div class="image-tiles-single">
+              <a href="" class="image-tiles-single">
                 <div class="image-tiles-single__hdr"><span>Becket House</span> London</div>
                 <div class="inner-background">
-                  <div class="inner-background__img"></div>
+                  <div class="inner-background__img" style="background-image:url('{{ get_template_directory_uri()  }}/assets/images/prospect-house.jpg')"></div>
                 </div>
-              </div>
+              </a>
             </div>
           </div>
         </section>

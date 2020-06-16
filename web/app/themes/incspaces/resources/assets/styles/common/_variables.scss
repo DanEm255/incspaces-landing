@@ -2,17 +2,14 @@
 
 @import "~bootstrap/scss/functions";
 // Font Family
-$ff-primary: "Montserrat-Regular",
+$ff-primary: "PTSans-Regular",
 sans-serif;
-$ff-primary--light: "Montserrat-Light",
+$ff-primary--italic: "PTSans-Italic",
 sans-serif;
-$ff-primary--medium: "Montserrat-Medium",
+$ff-primary--bolditalic: "PTSans-BoldItalic",
 sans-serif;
-$ff-primary--semibold: "Montserrat-SemiBold",
+$ff-primary--bold: "PTSans-Bold",
 sans-serif;
-$ff-primary--bold: "Montserrat-Bold",
-sans-serif;
-// $ff-secondary   : "", sans-serif;
 // Contrasts
 $light: #fff;
 $light-grey: #ececec;
