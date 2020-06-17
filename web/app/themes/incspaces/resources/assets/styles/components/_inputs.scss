@@ -1,14 +1,21 @@
 /* stylelint-disable */
 
 .input1A {
-  font-size: em(24);
-  padding: 7px 10px;
   background-color: transparent;
   border: 0;
   color: $light;
   border-bottom: 1px solid grey;
   margin-bottom: 30px;
   @include placeholder-color($light);
+  font-size: em(16);
+  padding: 10px;
+  @include media-breakpoint-up(sm) {
+    padding: 7px 10px;
+    font-size: em(20);
+  }
+  @include media-breakpoint-up(md) {
+    font-size: em(24);
+  }
 }
 
 select.input1A option {
@@ -26,6 +33,14 @@ select.input1A option {
 .btn1A {
   font-size: em(24);
   padding: 10px 40px;
-  width: auto!important;
   border: 0;
+  transition: 1s;
+  width: 100%;
+  @include media-breakpoint-up(sm) {
+    width: auto!important;
+  }
+  &:hover {
+    background-color: $dark;
+    color: $light;
+  }
 }

@@ -1,7 +1,7 @@
-<header class="header">
+<header class="header" data-aos>
   <div class="header-logo">
-    <a class="header-logo__img" href="">
+    <div class="header-logo__img">
       <img src="{{ get_template_directory_uri() }}/assets/images/inspaces-logo.png" alt="" />
-    </a>
+    </div>
   </div>
 </header>

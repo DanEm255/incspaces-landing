@@ -1,48 +1,122 @@
 /* stylelint-disable */
 
 .image-tiles {
-  width: 110%;
   position: relative;
   z-index: 1;
-  padding-top: 150px;
+  width: 100%;
   padding-bottom: 110px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 100px;
+  @include media-breakpoint-up(sm) {
+    padding-top: 150px;
+    padding-left: 0;
+    padding-right: 25px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding-right: 0;
+    width: 110%;
+  }
   .image-tiles-heading {
     &__hdr {
-      font-size: em(65);
       max-width: 230px;
+      font-family: $ff-secondary;
+      font-weight: 500;
+      line-height: 1;
+      font-size: em(35);
+      @include media-breakpoint-up(xs) {
+        font-size: em(45);
+      }
+      @include media-breakpoint-up(sm) {
+        font-size: em(55);
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: em(65);
+      }
     }
   }
   .image-tiles-single {
-    height: 325px;
     background-color: $dark;
-    padding: 50px 40px;
     position: relative;
     display: block;
+    height: 200px;
+    padding: 15px;
+    @include media-breakpoint-up(xs) {
+      padding: 20px;
+      height: 275px;
+    }
+    @include media-breakpoint-up(sm) {
+      padding: 30px 25px;
+    }
+    @include media-breakpoint-up(lg) {
+      height: 325px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 50px 40px;
+    }
     &__hdr {
-      font-size: em(28);
       position: relative;
       z-index: 1;
       line-height: 1;
       color: $light;
+      font-family: $ff-secondary;
+      font-weight: 100;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: 1s;
+      font-size: em(22);
+      @include media-breakpoint-up(sm) {
+        font-size: em(28);
+      }
       span {
         display: block;
-        font-family: $ff-primary--bold;
+        font-weight: 500;
+      }
+    }
+    .inner-background {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: 1s;
+      &__img {
+        width: 100%;
+        height: 100%;
+        @include background-cover();
+      }
+    }
+    &:hover {
+      .image-tiles-single__hdr {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .inner-background {
+        opacity: 0.25;
+      }
+    }
+    &.aos-animate {
+      @include media-breakpoint-down(sm) {
+        .image-tiles-single__hdr {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .inner-background {
+          opacity: 0.5;
+        }
       }
     }
   }
-  .inner-background {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    &__img {
-      width: 100%;
-      height: 100%;
-      @include background-cover();
-    }
-  }
   .c {
-    padding: 25px;
+    padding: 5px;
+    @include media-breakpoint-up(xs) {
+      padding: 10px;
+    }
+    @include media-breakpoint-up(lg) {
+      padding: 15px;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 25px;
+    }
   }
 }

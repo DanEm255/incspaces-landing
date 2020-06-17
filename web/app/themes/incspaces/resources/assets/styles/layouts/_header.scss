@@ -1,14 +1,31 @@
 /* stylelint-disable */
 
 .header {
-  padding: 20px 100px;
   position: absolute;
   width: 100%;
   z-index: 1;
+  padding: 30px;
+  @include media-breakpoint-up(sm) {
+    padding: 50px;
+  }
+  @include media-breakpoint-up(xxl) {
+    padding: 50px 100px;
+  }
   .header-logo {
     &__img {
       img {
         width: 140px;
+      }
+    }
+  }
+  .aos & {
+    .header-logo {
+      opacity: 0;
+      transition: 1s;
+    }
+    &.aos-animate {
+      .header-logo {
+        opacity: 1;
       }
     }
   }

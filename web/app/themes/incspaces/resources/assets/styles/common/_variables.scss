@@ -10,6 +10,7 @@ $ff-primary--bolditalic: "PTSans-BoldItalic",
 sans-serif;
 $ff-primary--bold: "PTSans-Bold",
 sans-serif;
+$ff-secondary: "aktiv-grotesk";
 // Contrasts
 $light: #fff;
 $light-grey: #ececec;
@@ -30,4 +31,4 @@ $color2: #fcf1eb;
 // $color3: #29254b;
 $warn: #ce4343;
 $success: #53d384;
-$grid-breakpoints: ( mobile-sm: 360px, mobile-md: 375px, mobile-lg: 414px, xs: 415px, sm: 577px, md: 768px, lg: 992px, xl: 1200px, xxl:1500px);
+$grid-breakpoints: ( mobile-xs: 0px, mobile-sm: 360px, mobile-md: 375px, mobile-lg: 414px, xs: 415px, sm: 577px, md: 768px, lg: 992px, xl: 1200px, xxl:1500px);

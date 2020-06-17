@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="container">
     <div class="row">
-      <div class="col-xs-12">
+      <div class="col-12">
         <div class="footer-textarea">
           <h2 class="footer-textarea__hdr">Full website coming soon</h2>
         </div>

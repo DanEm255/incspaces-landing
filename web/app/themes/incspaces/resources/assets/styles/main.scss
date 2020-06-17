@@ -7,6 +7,7 @@
 @import "common/functions";
 // VENDOR
 @import "./autoload/**/*";
+@import "./node_modules/aos/dist/aos";
 // BASE
 @import "base/class";
 @import "base/tags";
