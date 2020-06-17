@@ -26,6 +26,12 @@
     @include media-breakpoint-up(lg) {
       max-width: 80%;
     }
+    .wpcf7-validation-errors {
+      border: 1px solid #ff6363;
+      text-align: center;
+      padding: 10px;
+      margin: 25px 0 0 0;
+    }
     .wpcf7-form-control-wrap {
       overflow: hidden;
     }
@@ -41,13 +47,17 @@
         select {
           width: 105%;
         }
+        .wpcf7-not-valid-tip {
+          text-align: right;
+          color: #ff6363;
+        }
         &.desks,
         &.people,
         &.location {
           &:after {
             content: '';
             position: absolute;
-            top: 15px;
+            bottom: 20px;
             right: 10px;
             width: 0;
             height: 0;
@@ -63,13 +73,15 @@
         }
         &.consent {
           .wpcf7-form-control {
+            padding-top: 40px;
+            padding-bottom: 30px;
+            display: block;
             .wpcf7-list-item {
               margin: 0;
               label {
                 margin: 0;
                 display: flex;
                 align-items: center;
-                padding-bottom: 55px;
                 .wpcf7-list-item-label {
                   padding-left: 20px;
                   font-size: em(16);
@@ -78,6 +90,10 @@
                   }
                 }
               }
+            }
+            + .wpcf7-not-valid-tip {
+              text-align: left;
+              transform: translateY(-25px);
             }
           }
         }
