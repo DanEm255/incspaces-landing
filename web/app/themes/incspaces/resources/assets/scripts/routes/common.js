@@ -30,7 +30,7 @@ export default {
         once: true,
         duration: false,
       });
-    }, 1000)
+    }, 250)
     $(window).on('scroll', function() {
       imageScroll();
     });

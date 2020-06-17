@@ -18,6 +18,8 @@
     width: 110%;
   }
   .image-tiles-heading {
+    opacity: 0;
+    transition: 2s;
     &__hdr {
       max-width: 230px;
       font-family: $ff-secondary;
@@ -33,6 +35,9 @@
       @include media-breakpoint-up(lg) {
         font-size: em(65);
       }
+    }
+    &.aos-animate {
+      opacity: 1;
     }
   }
   .image-tiles-single {
@@ -95,7 +100,13 @@
         opacity: 0.25;
       }
     }
+    transform:translateY(100px);
+    opacity:0;
+    transition: 2s;
+    transition-delay: 0.5s;
     &.aos-animate {
+      transform: translateY(0);
+      opacity: 1;
       @include media-breakpoint-down(sm) {
         .image-tiles-single__hdr {
           opacity: 1;

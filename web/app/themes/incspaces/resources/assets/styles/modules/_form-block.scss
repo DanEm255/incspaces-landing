@@ -2,9 +2,10 @@
 
 .form-block {
   position: relative;
-  padding-top: 80px;
+  margin-top: 80px;
+  overflow: hidden;
   @include media-breakpoint-up(sm) {
-    padding-top: 155px;
+    margin-top: 155px;
   }
   &__hdr {
     padding-bottom: 60px;
@@ -109,6 +110,28 @@
     }
     @include media-breakpoint-down(xs) {
       display: none;
+    }
+  }
+  .aos & {
+    &:before {
+      opacity: 0;
+      transform: translateY(-100%);
+      transition: 3s;
+    }
+    .c {
+      opacity: 0;
+      transition: 2s;
+      transform: translateY(100px);
+    }
+    &.aos-animate {
+      &:before {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .c {
+        opacity: 1;
+        transform: translateY(0px);
+      }
     }
   }
 }

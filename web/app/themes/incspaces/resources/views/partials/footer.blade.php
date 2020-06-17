@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer" data-aos data-aos-offset="0">
   <div class="container">
     <div class="row">
       <div class="col-12">

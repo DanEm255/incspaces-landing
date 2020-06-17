@@ -80,4 +80,16 @@
       }
     }
   }
+  .aos & {
+    > .container {
+      transition: 2s;
+      transition-delay: 0.25s;
+      opacity: 0;
+    }
+    &.aos-animate {
+      > .container {
+        opacity: 1;
+      }
+    }
+  }
 }

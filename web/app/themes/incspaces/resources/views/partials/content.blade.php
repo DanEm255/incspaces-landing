@@ -20,11 +20,11 @@
   </div>
 </section>
 
-<main class="main-content">
+<main class="main-content" data-aos>
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <section class="form-block">
+        <section class="form-block" data-aos>
           <div class="row r">
             <div class="col-11 col-md-10 c">
               @if(get_field('form')['header'])
@@ -40,7 +40,7 @@
           <div class="row">
             <div class="col-6 col-md-4 c">
               @if(get_field('tiles')['main_header'])
-                <div class="image-tiles-heading">
+                <div class="image-tiles-heading" data-aos>
                   <h2 class="image-tiles-heading__hdr">{{ get_field('tiles')['main_header'] }}</h2>
                 </div>
               @endif

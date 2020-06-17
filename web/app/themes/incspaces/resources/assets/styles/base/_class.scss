@@ -49,6 +49,7 @@
 .main-content {
   background-color: $color1;
   color: $light;
+  overflow: hidden;
   > .container {
     position: relative;
     &:after {
@@ -64,6 +65,24 @@
       }
       @include media-breakpoint-down(xs) {
         display: none;
+      }
+    }
+  }
+  .aos & {
+    > .container {
+      &:after {
+        opacity: 0;
+        transform: translateY(-100%);
+        transition: 4s;
+        transition-delay: 0.5s;
+      }
+    }
+    &.aos-animate {
+      > .container {
+        &:after {
+          opacity: 1;
+          transform: translateY(0);
+        }
       }
     }
   }
